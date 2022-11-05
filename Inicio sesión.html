@@ -21,6 +21,15 @@
                 <input type="password" placeholder="Password" id="password">
                 <a href="#">¿Olvidaste tu contraseña?</a>
                 <button>REGISTRARSE</button>
+                <button onclick="toggleModal()" type="button">Terminos y condiciones</button>
+                <div class="modal-background" onclick="toggleModal()"></div>
+                <div class="modal">
+                    <h2>Nuestra condición es firme</h2>
+                    <p>En seven hardware nos tomamos en serio tus datos por lo cuál,
+                        nos aseguramos en que tus datos esten siempre protegidos sin 
+                        compartirlos con nadie. <span class="color-acento">Para salir da clic en cualquier lugar de fuera del recuadro.</span> 
+                    </p>
+                </div>
                 <p class="warnings" id="warnings"></p>
             </form>
         </div>

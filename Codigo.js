@@ -17,30 +17,16 @@ productContainers.forEach((item,i) => {
 })
 //Codigo para que funcione el slider
 
-//Codigo para validación de datos
-const email = document.getElementById("email")
-const password = document.getElementById("password")
-const form = document.getElementById("form")
-const parrafo = document.getElementById("warnings")
 
-form.addEventListener("submit", e=>{
-    e.preventDefault()
-    let warnings = ""
-    let entrar = false
-    let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/
-    if(!regexEmail.test(email.value)){
-        warnings += `El email no es valido <br>`
-        entrar = true
+//Codigo para que funcione el modal
+const toggleModal = () =>{
+    const {classList} = document.body;
+    if (classList.contains("open")) {
+        classList.remove("open");
+        classList.add("closed");
+    } else {
+        classList.remove("closed")
+        classList.add("open");
     }
-    if(pass.value.length < 8){
-        warnings += `La contraseña no es valida <br>`
-        entrar = true
-    }
-
-    if(entrar){
-        parrafo.innerHTML = warnings
-    }else{
-        parrafo.innerHTML = "se ha creado la cuenta"
-    }
-})
-//Codigo para validación de datos
+};
+//Codigo para que funcione el modal
