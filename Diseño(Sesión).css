@@ -93,12 +93,6 @@ body{
 }
 /*Pagina de inicio de sesión*/
 
-.warnings{
-    width: 200px;
-    text-align: center;
-    margin: auto;
-    color: #B06AB3
-}
 
 /*Modal*/
 button{
@@ -190,3 +184,38 @@ button{
 
   .color-acento {color: rgb(228, 223, 237)}
 /*Modal*/
+
+/*Validación de datos*/
+  
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control input {
+    border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-size: 12px;
+	padding: 10px;
+	width: 100%;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+/*Validación de datos*/
