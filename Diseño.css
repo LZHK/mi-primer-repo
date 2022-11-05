@@ -1,0 +1,379 @@
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Padding del botón*/
+.tmbtn {
+    margin: 90px 0 20px 0;
+}
+/*Padding del botón*/
+
+/*Tamaño de imagenes en el slider*/
+.c-item {
+    height: 480px;
+}
+
+.c-img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+/*Tamaño de imagenes en el slider*/
+
+
+/*Barras de titulo*/
+ .title_bar{
+    background: #002c85;
+    border-radius: 3px;
+    font-size: medium;
+    color: #ffffff;
+    font-weight: normal;
+    height: 50px;
+    line-height: 33px;
+    margin: 20px 15px 20px 15px;
+    padding: 8px 0 0 15px;
+    text-align: left;
+}
+
+#productos .title_bar img{
+    width: 35px;
+    border: 0;
+}
+
+.title_bar img{
+    width: 35px;
+    border: 0;
+}
+/*Barras de titulo*/
+
+
+/*Slider de cartas*/
+.product {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.product-category{
+    padding: 0 10vw;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+
+.product-container{
+    padding: 0 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.product-container::-webkit-scrollbar{
+    display: none;
+}
+
+.product-card{
+    flex: 0 0 auto;
+    width: 250px;
+    height: 500px;
+    margin-right: 40px;
+}
+
+.product-image{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.product-thumb{
+    margin-top: 45px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.discount-tag{
+    position: absolute;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    color: #ff7d7d;
+    right: 10px;
+    top: 10px;
+    text-transform: capitalize;
+}
+
+.card-btn{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 90%;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background: #fff;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.product-card:hover .card-btn{
+    opacity: 1;
+}
+
+.card-btn:hover{
+    background: #009688;
+    color: #fff;
+}
+
+.product-info{
+    width: 100%;
+    height: 150px;
+    padding-top: 10px;
+}
+
+
+.product-brand{
+    text-transform: uppercase;
+}
+
+.product-short-description{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    opacity: 0.5;
+    text-transform: capitalize;
+    margin: 5px 0;
+}
+
+.price {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.actual-price {
+    margin-left: 20px;
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+.pre-btn,
+.nxt-btn{
+    border: none;
+    width: 10vw;
+    height: 450px;
+    position: absolute;
+    top: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    cursor: pointer;
+    z-index: 9
+}
+
+.pre-btn{
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.nxt-btn{
+    right: 0;
+}
+
+.pre-btn,
+.nxt-btn {
+    opacity: 0.2;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img{
+    opacity: 1;
+}
+
+.collection-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.collection {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.collection p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+.collection:nth-child(3) {
+    grid-column: span 2;
+    margin-bottom: 10px;
+}
+/*Slider de cartas*/
+
+/*Aquí inicia la parte del mapa*/
+#mapa .map-container{
+    text-align: center;
+    padding: 150px 12px;
+    background-image: url(Imagenes/layered-waves-haikei.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#mapa .map-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#mapa .texto{
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#mapa h2{
+    margin-top: 0px;
+}
+
+#mapa iframe{
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 600px;
+}
+
+.color-acento {color: rgba(94, 28, 238)}
+/*Aquí finaliza la parte del programa*/
+
+
+/*Aquí inicia la parte del footer*/
+footer{
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 8%;
+    background-color:#0e0e0e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo{
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+.social-icons-container, .footer-menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.social-icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid #f2f2f2;
+    background-image: url(Imagenes/whatsapp.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+
+.social-icon:hover{
+    background-color: #121212;
+    filter: invert(1);
+}
+
+.social-icon:nth-of-type(2){
+    background-image: url(Imagenes/instagram.png);
+}
+
+.social-icon:nth-of-type(3){
+    background-image: url(Imagenes/gorjeo.png);
+}
+
+.social-icon:nth-of-type(4){
+    background-image: url(Imagenes/youtube.png);
+}
+
+.footer-menu-container{
+    list-style-type: none;
+    color: #f2f2f2;
+    font-size: 18px;
+}
+
+.menu-item{
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.menu-item:hover{
+    opacity: 1;
+}
+
+.copyright{
+    color: #f2f2f2;
+    opacity: 0.3;
+}
+/*Aquí finaliza la parte del footer*/
+
+/*Boton*/
+.contenedor-btn{
+    align-content: center;
+    justify-content: center;
+    display: grid;
+    height: 40px;
+    width: 250px;
+    margin: 0 20px 0 30px;
+}
+
+.btn-sesion{
+    border: 3px solid rgba(100,100,100,0.1);
+    /*margin-bottom: 20px;*/
+    /*padding: 40px;*/
+    width: 250px; 
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #FFF;
+    background-size: 300%;
+    transition: 0.6s;
+}
+
+.btn1{
+    background-image: linear-gradient(to left, #00B7DA, #161569, #00B7DA);
+}
+
+.btn-sesion:hover{
+    background-position: right;
+}
+/*Boton*/

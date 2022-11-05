@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Seven Hardware</title>
+
+    <!--Links correspondiente a las fuentes de Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <!--Links correspondientes a las fuentes de Google-->
+
+    <!--Link a el css propio-->
+    <link rel="stylesheet" href="Diseño.css" />
+    <!--Link a el css de bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!--Link a el js de bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Barra de navegación-->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="Imagenes/#0B0633.png"
+              alt="Logo"
+              width="30"
+              height="30"
+              class="d-inline-block align-text-top"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Caracteristicas</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Precios</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Nuestros Productos
+              </a>
+
+              <ul class="dropdown-menu">
+                <li><a href="#" class="dropdown-item">Almacenamiento</a></li>
+                <li><a href="#" class="dropdown-item">Audio</a></li>
+                <li><a href="#" class="dropdown-item">Memorias</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <div class="contenedor-btn">
+            <button class="btn-sesion btn1" onclick="location.href='Inicio sesión.html'">Iniciar Sesión</button>
+          </div>
+        </div>
+
+        
+      </nav>
+    </header>
+
+    <!--Carrusel de imagenes-->
+    <section id="carrusel">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="false"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active c-item">
+            <img
+              src="Imagenes/CPU Ryzen.jpg"
+              class="d-block w-100 c-img"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>¡Desbloquea todo tu potencial!</h5>
+              <p>Conoce la nueva serie 5000 de Ryzen</p>
+              <button
+                class="btn btn-primary px-4 py-2 fs-5 tmbtn"
+                data-bs-toogle="modal"
+                data-bs-target="#booking-modal"
+              >
+                ¡Conoce tu proximo procesador!
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img
+              src="Imagenes/RTX 4090.jpg"
+              class="d-block w-100 c-img"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>GeForce RTX Series 40</h5>
+              <p>Nueva serie de tarjetas de Nvidia</p>
+              <button
+                class="btn btn-primary px-4 py-2 fs-5 tmbtn"
+                data-bs-toogle="modal"
+                data-bs-target="#booking-modal"
+              >
+                ¡Reserva la tuya!
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img
+              src="Imagenes/XPG Core Reactor.jpg"
+              class="d-block w-100 c-img"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>¡Potencia todos tus sueños!</h5>
+              <p>Con las nuevas fuentes de poder de XPG Core Reactor</p>
+              <button
+                class="btn btn-primary px-4 py-2 fs-5 tmbtn"
+                data-bs-toogle="modal"
+                data-bs-target="#booking-modal"
+              >
+                ¡Conoce más de la serie!
+              </button>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    
+
+    <!--Sección de productos-->
+    <section class="product">
+      <!--Barra de titulo de favoritos-->
+      <div class="title_bar">
+        <img src="Imagenes/favorito.png" alt="">
+        <span>Tus favoritos</span>
+      </div>
+      
+      <div>
+        <button class="pre-btn"><img src="Imagenes/arrow.png" alt=""></button>
+        <button class="nxt-btn"><img src="Imagenes/arrow.png" alt=""></button>
+      </div>
+
+      <!--Slider de cartas de favoritos-->
+      <div class="product-container">
+
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% descuento</span>
+            <img src="Imagenes/Ryzen 5.jpg" class="product-thumb" alt="">
+            <button class="card-btn">Añadir a la lista de deseos</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">Ryzen 5 5600</h2>
+            <p class="product-short-description">Procesador</p>
+            <span class="price">$3000</span><span class="actual-price">$4500</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% descuento</span>
+            <img src="Imagenes/Rx 6800.jpg" class="product-thumb" alt="">
+            <button class="card-btn">Añadir a la lista de deseos</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">Rx 6800</h2>
+            <p class="product-short-description">Tarjeta Gráfica AMD</p>
+            <span class="price">$8500</span><span class="actual-price">$10,000</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% descuento</span>
+            <img src="Imagenes/Enfriamiento liquido.jpg" class="product-thumb" alt="">
+            <button class="card-btn">Añadir a la lista de deseos</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">Cougar E-3000</h2>
+            <p class="product-short-description">Enfriamiento Liquido</p>
+            <span class="price">$2000</span><span class="actual-price">$4000</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% descuento</span>
+            <img src="Imagenes/Audifonos Gamer.png" class="product-thumb" alt="">
+            <button class="card-btn">Añadir a la lista de deseos</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">Logitech G-500</h2>
+            <p class="product-short-description">Audifonos Inalambricos</p>
+            <span class="price">$2000</span><span class="actual-price">$3500</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% descuento</span>
+            <img src="Imagenes/Disipador Noctua.jpg" class="product-thumb" alt="">
+            <button class="card-btn">Añadir a la lista de deseos</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">Noctua U-21H</h2>
+            <p class="product-short-description">Disipador por aire</p>
+            <span class="price">$5000</span><span class="actual-price">$8000</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% descuento</span>
+            <img src="Imagenes/Gabinete Gamer.png" class="product-thumb" alt="">
+            <button class="card-btn">Añadir a la lista de deseos</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">Corsair 4000D</h2>
+            <p class="product-short-description">Gabinete Micro-ATX</p>
+            <span class="price">$1500</span><span class="actual-price">$2500</span>
+          </div>
+        </div>
+
+      </div>
+    
+      <!--Barra de titulo de Ofertas-->
+      <div class="title_bar">
+        <img src="Imagenes/Descuento.png" alt="">
+        <span>Ofertas</span>
+      </div>
+  
+      <div>
+        <button class="pre-btn"><img src="Imagenes/arrow.png" alt=""></button>
+        <button class="nxt-btn"><img src="Imagenes/arrow.png" alt=""></button>
+      </div>
+
+      <!--Area de slider de cartas de Ofertas-->
+      <div class="product-container">
+
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% descuento</span>
+            <img src="Imagenes/Fuente de poder.jpg" class="product-thumb" alt="">
+            <button class="card-btn">Añadir a la lista de deseos</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">Corsair 1000W</h2>
+            <p class="product-short-description">Fuente de poder</p>
+            <span class="price">$9000</span><span class="actual-price">$12,000</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% descuento</span>
+            <img src="Imagenes/Monitor Gamer.png" class="product-thumb" alt="">
+            <button class="card-btn">Añadir a la lista de deseos</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">Predator M</h2>
+            <p class="product-short-description">Monitor 240Hhz</p>
+            <span class="price">$12,000</span><span class="actual-price">$14,000</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% descuento</span>
+            <img src="Imagenes/Mouse Logitech.png" class="product-thumb" alt="">
+            <button class="card-btn">Añadir a la lista de deseos</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">Mouse G-502</h2>
+            <p class="product-short-description">Mouse Optico</p>
+            <span class="price">$650</span><span class="actual-price">$1000</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% descuento</span>
+            <img src="Imagenes/RTX 3060.png" class="product-thumb" alt="">
+            <button class="card-btn">Añadir a la lista de deseos</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">RTX 3060</h2>
+            <p class="product-short-description">Tarjeta Gráfica Nvidia</p>
+            <span class="price">$9999</span><span class="actual-price">$14,000</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% descuento</span>
+            <img src="Imagenes/SSD M.2.png" class="product-thumb" alt="">
+            <button class="card-btn">Añadir a la lista de deseos</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">Samsung Evo 250</h2>
+            <p class="product-short-description">SSD de 250 GB</p>
+            <span class="price">$500</span><span class="actual-price">$650</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% descuento</span>
+            <img src="Imagenes/Teclado Gamer 2.jpg" class="product-thumb" alt="">
+            <button class="card-btn">Añadir a la lista de deseos</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">Aourus K1</h2>
+            <p class="product-short-description">Teclado Gamer Aourus</p>
+            <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!--Barra de titulo de lo más comprado-->
+      <div class="title_bar">
+        <img src="Imagenes/Reseña-2.png" alt="">
+        <span>Lo más comprado</span>
+      </div>
+  
+      <div>
+        <button class="pre-btn"><img src="Imagenes/arrow.png" alt=""></button>
+        <button class="nxt-btn"><img src="Imagenes/arrow.png" alt=""></button>
+      </div>
+
+      <!--Area de slider de cartas lo más comprado-->
+      <div class="product-container">
+
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% descuento</span>
+            <img src="Imagenes/Rx 6800.jpg" class="product-thumb" alt="">
+            <button class="card-btn">Añadir a la lista de deseos</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">Rx 6800</h2>
+            <p class="product-short-description">Tarjeta Gráfica AMD</p>
+            <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% descuento</span>
+            <img src="Imagenes/RTX 3060 Gig.png" class="product-thumb" alt="">
+            <button class="card-btn">Añadir a la lista de deseos</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">RTX 3060</h2>
+            <p class="product-short-description">Tarjeta Gráfica Nvidia</p>
+            <span class="price">$8955</span><span class="actual-price">$13,850</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% descuento</span>
+            <img src="Imagenes/Monitor 2.png" class="product-thumb" alt="">
+            <button class="card-btn">Añadir a la lista de deseos</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">Monitor ROG</h2>
+            <p class="product-short-description">Monitor Gamer</p>
+            <span class="price">$9959</span><span class="actual-price">$14,000</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% descuento</span>
+            <img src="Imagenes/Disco HDD.png" class="product-thumb" alt="">
+            <button class="card-btn">Añadir a la lista de deseos</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">Seagate Barracuda</h2>
+            <p class="product-short-description">Unidad HDD de 2 TB</p>
+            <span class="price">$1000</span><span class="actual-price">$750</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% descuento</span>
+            <img src="Imagenes/Tarjeta Madre.png" class="product-thumb" alt="">
+            <button class="card-btn">Añadir a la lista de deseos</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">ROG Strix Z-790</h2>
+            <p class="product-short-description">Tarjeta Madre ROG</p>
+            <span class="price">$4500</span><span class="actual-price">$6600</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% descuento</span>
+            <img src="Imagenes/Disco SSD.png" class="product-thumb" alt="">
+            <button class="card-btn">Añadir a la lista de deseos</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">Samsung EVO 1000</h2>
+            <p class="product-short-description">Unidad SSD de 1 TB</p>
+            <span class="price">$1370</span><span class="actual-price">$2000</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <!--Aqui termina el slider de cartas-->
+
+    <!--Aqui inicia la sección del mapa-->
+    <section id="mapa">
+      <div class="map-container">
+        <div class="image-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3702.4250796426677!2d-102.26312564973134!3d21.879701063488998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429ee06a9451f33%3A0xfc86261cd1c105f9!2sCentro%20Comercial%20Espacio%20Aguascalientes!5e0!3m2!1ses-419!2smx!4v1667508637036!5m2!1ses-419!2smx"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="texto">
+
+          <h2 style="color: rgba(245, 235, 245);">¿Problemas <span class="color-acento">Para encontrarnos?</span></h2>
+          <p style="color: rgba(245, 235, 245);">Encuentranos mediante la ubicación GPS de <span class="color-acento">Google Maps</span></p>
+
+        </div>
+      </div>
+    </section>
+  <!--Codigo Javascript para que funcione el slider de cartas-->
+    <script src="Codigo.js"></script>
+
+    <!--Aquí empieza el footer-->
+    <footer>
+      <img src="" alt="" class="logo">
+      <div class="social-icons-container">
+        <a href="" class="social-icon"></a>
+        <a href="" class="social-icon"></a>
+        <a href="" class="social-icon"></a>
+        <a href="" class="social-icon"></a>
+      </div>
+
+      <ul class="footer-menu-container">
+        <li class="menu-item">Legal</li>
+        <li class="menu-item">Cookies</li>
+        <li class="menu-item">Privacidad</li>
+        <li class="menu-item">Envíos</li>
+        <li class="menu-item">Reembolsos</li>
+      </ul>
+
+      <span class="copyright">&copy; 2022, Seven Hardware. All rights reserved.</span>
+    </footer>
+    <!--Aquí termina el footer-->
+
+
+  </body>
+</html>
